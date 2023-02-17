@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "style.css"> 
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <script src = "index.js"></script>
+    <div class = "gridForm">
+        <div class = "gridItem expName">
+            <label>Expense Name: </label><br><br>
+            <input type = "text" placeholder = "Expense Name" id = "expName">
+        </div>
+        <div class = "gridItem expDate">
+            <label>Date: </label><br><br>
+            <input type = "date" id = "expDate">
+        </div>
+        <div class = "gridItem expAmount">
+            <label>Amount: </label><br><br>
+            <input type = "text" placeholder = "Amount" id="expAmount">
+        </div>
+        <div class = "divButton">
+            <button type = "button" class = "submit" onclick = "getExpense()">Add Expense</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class = "divTable">
+        <table class = "expTable">
+            <thead>
+                <tr>
+                    <th style="width: 10%; border-top-left-radius: 10px;">S.N.</th>
+                    <th style = "width: 40%">Expense</th>
+                    <th style = "width: 20%">Date</th>
+                    <th style = "width: 20%">Amount</th>
+                    <th style = "width: 6%; border-top-right-radius: 10px; background-color: none;"></th>
+                </tr>       
+            </thead>
+            <tbody id = "tbody">
+                <tr id = "trEmpty">
+                    <td></td>
+                    <td>No expenses added yet!</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src = "index.js"></script>
+</body> 
+</html>
